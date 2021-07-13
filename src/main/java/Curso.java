@@ -1,7 +1,15 @@
 public class Curso {
 
     private Professor coordenador;
+    private TipoEnsino tipoEnsino;
 
+    public TipoEnsino getTipoEnsino() {
+        return tipoEnsino;
+    }
+
+    public void setTipoEnsino(TipoEnsino tipoEnsino) {
+        this.tipoEnsino = tipoEnsino;
+    }
 
     public Curso(Professor coordenador) {
         this.coordenador = coordenador;
@@ -19,8 +27,5 @@ public class Curso {
 
     public String getDescricaoEscolaridadeCoordenador() {
         return coordenador.getDescricaoEscolaridade();
-    }
-    public String getTipoEnsino(){
-        return
     }
 }
